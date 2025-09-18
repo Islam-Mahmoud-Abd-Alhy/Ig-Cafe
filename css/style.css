@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Montserrat:wght@100..900&family=Montez&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#Header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:500px;
+    background-color:  #001a4d;
+    color:gold;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+nav a{
+    text-decoration: none;
+    color:gold;
+    padding-left:20px;
+    padding-right:20px;
+}
+.fa-solid{
+    font-size: 20px;
+}
+.Name-Header{
+    margin-left: -480px;
+    margin-bottom: 10px;
+}
+nav a:hover{
+    color:darkgoldenrod
+}
+/*Hero Section*/
+#Hero{
+    background: linear-gradient(135deg, #001a4d, #003366);
+padding:200px;
+display: flex;
+flex-direction: row;
+gap: 300px;
+}
+.txt-Hero{
+    display: flex;
+    flex-direction:column ;
+    gap:20px;
+    max-width: 500px;
+    margin-left: -50px;
+}
+.h1-txt-hero{
+    color:#ffcc00;
+}
+.p-txt-hero{
+    color:lightgray;
+    font-size: 20px;
+}
+.buttons-hero{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: -10px;
+}
+.btn-Hero{
+    border: 2px solid #001a4d ;
+    background-color: #ffcc00;
+    width:200px;
+    border-radius: 20px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    color:#001a4d;
+    transition:all 0.3s ease-in-out;
+}
+.btn-Hero:hover{
+    background-color: #644a09;
+    color: white;
+    cursor: pointer;
+}
+.image-images-hero{
+    width:200px;
+    height:200px;
+    margin-top: -10px;
+    animation: float 6s ease-in-out infinite alternate;
+}
+@keyframes float{
+    0%{transform: translateY(-10px) scale(1)}
+    50%{transform: translateY(-30px) scale(1.2)}
+    100%{transform: translate(0) scale(1)}
+}
+/*About Section*/
+#About{
+    padding:100px;
+    background: linear-gradient(90deg,#084b8d, #001a4d) ;
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.h1-About{
+    color:#3399ff
+}
+.txt-About{
+    max-width: 500px;
+    color:lightgray;
+}
+.buttons-About{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.btn-about{
+    border: 2px solid #001a4d ;
+    background-color: #ffcc00;
+    width:200px;
+    border-radius: 20px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    color:#001a4d;
+    transition:all 1s ease-in-out;
+}
+.btn-about:hover{
+    background-color: #644a09;
+    color: white;
+    cursor: pointer;
+}
+/*Menu Section*/
+#Menu{
+    padding:100px;
+    background: linear-gradient(135deg, #001a4d, #003366);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-left: -70px;
+}
+.h1-Menu{
+    color:#ff6600;
+}
+.drinks-Menu{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.Cappuccino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    border: 2px solid #6F4E37;
+    border-radius: 20px;
+    max-width:300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.Cappuccino:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px #ff8c0077;
+}
+.Cappuccino-drinks-menu{
+    width:200px;
+    height:200px;
+    border-radius: 20px;
+}
+.h2-Cappuccino-drinks-menu{
+    color: #5C4033;
+}
+.p-Cappuccino-drinks-menu{
+    color: #7a5644;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.h3-Cappuccino-drinks-menu{
+    color:#001a4d;
+    background-color: #FFD700;
+    width:200px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.button-Cappuccino-drinks-menu{
+    border: 2px solid #001a4d ;
+    background-color: #ffcc00;
+    width:200px;
+    border-radius: 20px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    color:#001a4d;
+}
+.Latte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    border: 2px solid #6F4E37;
+    border-radius: 20px;
+    max-width:300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.Latte:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px #ff8c0077;
+}
+.Latte-drinks-menu{
+    width:200px;
+    height:200px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.h2-latte-drinks-Menu{
+    color: #5C4033;
+}
+.p-Latte-drinks-Menu{
+    color: #7a5644;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.h3-Latte-drinks-Menue{
+    color:#001a4d;
+    background-color: #FFD700;
+    width:200px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.button-Latte-drinks-Menu{
+    border: 2px solid #001a4d ;
+    background-color: #ffcc00;
+    width:200px;
+    border-radius: 20px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    color:#001a4d;
+    margin-bottom:20px ;
+}
+.Mint-Mojito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    border: 2px solid #3EB489;
+    border-radius: 20px;
+    max-width:250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.Mint-Mojito:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px #3eb4898e;
+}
+.Mint-Mojito-drinks-menu{
+    width:200px;
+    height:200px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.h2-Mint-Mojito-drinks-menu{
+    color:#2E8B57;
+}
+.p-Mint-Mojito-drinks-menu{
+    color: #236a42;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+.h3-Mint-Mojito-drinks-menu{
+    color:#001a4d;
+    background-color: #32CD32;
+    width:250px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.button-Mint-Mojito-drinks-menu{
+   border: 2px solid #001a4d ;
+    background-color: #32CD32;
+    width:200px;
+    border-radius: 20px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    color:#001a4d;
+    margin-bottom:50px;
+}
+.Lemon-and-mint{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    border: 2px solid #3EB489;
+    border-radius: 20px;
+    max-width:300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.Lemon-and-mint:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px #3eb4898e;
+}
+.Lemon-and-mint-drinks-menu{
+    width:200px;
+    height:200px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.h2-Lemon-and-mint-drinks-menu{
+    color:#2E8B57;
+}
+.p-Lemon-and-mint-drinks-menu{
+    color: #236a42;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+.h3-Lemon-and-mint-drinks-menu{
+    color:#001a4d;
+    background-color: #32CD32;
+    width:200px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.button-Lemon-and-mint-drinks-menu{
+    border: 2px solid #001a4d ;
+    background-color: #32CD32;
+    width:200px;
+    border-radius: 20px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    color:#001a4d;
+    margin-bottom:50px;
+}
+.foods-Menu{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;  
+    justify-content: center;
+    align-items: center;
+}
+.Pancake-with-honey{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    border: 2px solid #FFD700;
+    border-radius: 20px;
+    max-width:300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+/*     margin-left: 50px; */
+}
+.Pancake-with-honey:Hover{
+   transform: translateY(-10px);
+   box-shadow: 0 6px 15px #aa9100;  
+}
+.Pancake-with-honey-food-menu{
+    width:200px;
+    height:200px;
+    border-radius: 20px;
+}
+.h2-Pancake-with-honey-food-menu{
+    color:#B8860B;
+}
+.p-Pancake-with-honey-food-menu{
+    color:#5c4e00;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.h3-Pancake-with-honey-food-Menu{
+    color:#001a4d;
+    background-color: #FF8C00;
+    width:200px;
+    border-radius: 20px;
+    margin-top: 10px;  
+}
+.buuton-Pancake-with-honey-food-menu{
+    border: 2px solid #001a4d ;
+    background-color: #FF8C00;
+    width:200px;
+    border-radius: 20px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    color:#001a4d;
+    margin-bottom:40px; 
+}
+.Butter-croissant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    border: 2px solid #FFD700;
+    border-radius: 20px;
+    max-width:300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; 
+}
+.Butter-croissant:hover{
+   transform: translateY(-10px);
+   box-shadow: 0 6px 15px #aa9100;  
+}
+.Butter-croissant-img{
+    width:200px;
+    height:200px;
+    border-radius: 20px;  
+}
+.h2-Butter-croissant-foods-menu{
+    color:#B8860B;
+}
+.p-Butter-croissant-foods-menu{
+    color:#5c4e00;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.h3-Butter-croissant-foods-menu{
+    color:#001a4d;
+    background-color: #FF8C00;
+    width:200px;
+    border-radius: 20px;
+    margin-top: 10px;   
+}
+.Button-Butter-croissant-foods-menu{
+    border: 2px solid #001a4d ;
+    background-color: #FF8C00;
+    width:200px;
+    border-radius: 20px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    color:#001a4d;
+    margin-bottom:40px; 
+}
+/*conact section*/
+#contact{
+    padding:100px;
+    background: linear-gradient(90deg,#084b8d, #001a4d) ;
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color:#3399ff
+}  
+form {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  backdrop-filter: blur(1000px);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.463);
+}
+input, textarea {
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #ffcc00;
+}
+button {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #ffcc00;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  color: #001a4d;
+}
+textarea::placeholder {
+  color: #001a4d;
+  font-weight: bolder;
+}
+input::placeholder {
+  color: #001a4d;
+  font-weight: bolder;
+}
+label {
+  color: #f9f9f9;
+  font-weight: bolder;
+}
+/*Footer Section*/
+#Footer{
+ background-color:  #001a4d;
+color:gold;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 50px;
+gap:80px;
+}
+.text-move{
+ width: 100%;
+  overflow: hidden;  
+  background-color: #001a4d; 
+  padding: 10px;
+}
+
+.text-move p {
+  display: inline-block;
+  white-space: nowrap; 
+  color: #ffcc00;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  left: -100%; 
+  animation: marquee 25s linear infinite;
+}
+@keyframes marquee {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+.p-Footer{
+    font-weight: bolder;
+    margin-left: 70px;
+    margin-bottom: -30px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: center;
+}
+.facebook{
+    color: gold;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.instagram{
+    color: gold;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.twitter{
+    color: gold;
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+div a{
+    text-decoration: none;
+    color:gold;
+}
+/*Responsive for all sections*/
+@media (max-width: 768px) {
+    /* Hero */
+    #Hero {
+        padding: 120px 15px;
+    }
+    .txt-Hero {
+        gap: 15px;
+    }
+    .image-images-hero{
+        margin-left:300px;
+    }
+    .btn-Hero {
+        width: 150px;
+        padding: 8px;
+    }
+
+    /* Menu Cards */
+    #Menu .Cappuccino, #Menu .Latte, 
+    #Menu .Lemon-and-mint,
+    #Menu .Pancake-with-honey, #Menu .Butter-croissant {
+        max-width: 90%;
+    }
+    .Mint-Mojito{
+        max-width:300px;
+
+    /* Contact inputs */
+    input, textarea, button {
+        width: 100%;
+    }
+
+    /* Footer marquee */
+    .text-move p {
+        font-size: 16px;
+    }
+}
+}
+/*This progect is made By Islam Mahmoud Abd Alhy*/
