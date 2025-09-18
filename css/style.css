@@ -31,11 +31,28 @@ nav a{
     padding-left:20px;
     padding-right:20px;
 }
-.fa-solid{
-    font-size: 20px;
+.highlight {
+  display: inline-block;
+  width: 6px;
+  height: 30px;
+  background: gold;
+  margin-right: 10px;
+  border-radius: 3px;
+   vertical-align: middle;
 }
 .Name-Header{
     margin-bottom: 10px;
+    animation: dropDown 5s ease-in-out  alternate;
+}
+@keyframes dropDown {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 nav a:hover{
     color:darkgoldenrod
