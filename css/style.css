@@ -42,7 +42,7 @@ nav a{
 }
 .Name-Header{
     margin-bottom: 10px;
-    animation: dropDown 5s ease-in-out  alternate;
+    animation: dropDown 3s ease-in-out  alternate;
 }
 @keyframes dropDown {
   from {
